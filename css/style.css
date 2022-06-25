@@ -18,7 +18,7 @@ coloque nas sessões indicadas*/
 body {
     box-sizing: border-box;
     background-color: var(--color-de-fondo) ;
-    font-family: 'Raleway';
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1;
