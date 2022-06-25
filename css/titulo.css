@@ -1,0 +1,35 @@
+/*Sección Title*/
+
+.titulo{
+    margin-top: 1rem;
+}
+
+.titulo__div{
+    justify-content: center;
+}
+
+.titulo__div__imagen{
+    margin: auto;
+    width: 60%;
+    max-width: 22rem;
+    justify-content: center;
+}
+
+.titulo__profile{
+    width: 100%;
+}
+
+.titulo__container{
+    width: calc(100% - 0.75rem);
+    margin: auto;
+}
+
+.titulo__subsection{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.titulo__network{
+    display: flex;
+    justify-content: space-around;
+}
