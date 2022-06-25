@@ -7,9 +7,9 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --color-de-fondo: #0477fb;
-   --color-de-fondo-alternativo: #013d83;
-   --color-de-link: rgb(255 231 77);
+   --color-de-fondo: rgb(58, 58, 58);
+   --color-de-fondo-alternativo: #010c19;
+   --color-de-link: rgb(246, 246, 246);
    --color-lineas: silver;
    --color-de-texto:whitesmoke;
 
@@ -18,12 +18,20 @@ coloque nas sessões indicadas*/
 
 body {
     box-sizing: border-box;
-    background-color: var(--color-de-fondo) ;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);  
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1;
     color: var(--color-de-texto);
+}
+
+.fondo-semi-transparente{
+    background-color: rgba(0,0,0,.1);
+    border-radius: 1rem;
+    padding: .25rem;
+    margin: .25rem;
 }
 ol, ul,li {
     list-style: none;
@@ -31,6 +39,20 @@ ol, ul,li {
 a{
     text-decoration: none;
     color: var(--color-de-link);
+}
+
+.contenedores{
+    width: calc(100% - 0.75rem);
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.texto-centrado{
+    text-align: center;
+}
+
+.texto-justificado{
+    text-align: justify;
 }
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
@@ -49,23 +71,6 @@ https://en.bem.info/methodology/quick-start/*/
     width: 100%;
 }
 
-/*Sección About*/
-
-section.about{
-
-}
-
-/*Sección Hobbies*/
-
-section.hobbies{
-    
-}
-
-/* Experiencia Académica*/
-
-section.academic{
-
-}
 
 /* experiencia*/
 

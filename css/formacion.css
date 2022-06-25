@@ -1,0 +1,36 @@
+.academic__cursos__list{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-around;
+    margin: 0;
+    margin-top: 1rem;
+    border-top: 2px solid silver;    
+}
+
+.academic__cursos__item__img{
+    height: 5rem;
+    background-position: center;
+    place-items: center center;
+    margin: auto;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.academic__cursos__item__img img{
+    height: 100%;
+
+}
+
+.academic__cursos__item__titulo h4{
+    font-size: .9rem;
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.academic__cursos__item__subtitulo{
+    height: 1rem;
+    font-size: .85rem;
+}

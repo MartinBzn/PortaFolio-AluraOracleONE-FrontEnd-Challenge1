@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-bottom: 1px solid var(--color-lineas);
+    /* border-bottom: 1px solid var(--color-lineas); */
     height: 5.5rem;
 }
 
@@ -20,8 +20,8 @@
     position: absolute;
     right: 0;
     width: 0;
-    height: 1.55rem;
-    background: var(--color-de-fondo);
+    height: 1.6rem;
+    background: rgba(0,212,255,1);
     animation: tipeo 3s steps(22), titilar .5s 3s infinite;
 }
 
@@ -93,6 +93,8 @@
     min-height: var(--tamanio-icono);
     align-self: flex-start;
     width: 50%;
+    opacity: .75;
+    z-index: 2;
 }
 
 .menu__icono, .menu__check{

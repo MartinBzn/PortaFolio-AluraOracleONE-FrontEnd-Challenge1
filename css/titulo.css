@@ -1,8 +1,8 @@
-/*Sección Title*/
-
-.titulo{
+/* .titulo{
     margin-top: 1rem;
-}
+    width: calc(100% - 0.75rem);
+    margin: auto;
+} */
 
 .titulo__div{
     justify-content: center;
@@ -19,23 +19,21 @@
     width: 100%;
 }
 
-.titulo__container{
-    width: calc(100% - 0.75rem);
-    margin: auto;
-}
-
-.titulo__bio{
-    text-align: center;
-}
-
 .titulo__subsection{
     font-size: 1rem;
     font-weight: normal;
-    text-align: justify;
 }
 
 .titulo__network{
     display: flex;
     justify-content: space-around;
     padding: 0;
+    
+}
+
+.titulo__network__item{
+    padding: .25rem;
+    width: 6rem;
+    border-bottom: 1px solid var(--color-de-link);
+    text-align: center;
 }

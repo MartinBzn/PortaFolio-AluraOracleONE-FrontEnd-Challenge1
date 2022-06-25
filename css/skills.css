@@ -1,0 +1,36 @@
+.skills__linea{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills__box{
+    background: #d4dcff;
+    color: rgb(0, 0, 0);
+    width: calc((100% / 3) - 0.75rem);
+    margin: 0.25rem;
+    border-radius: 20%;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0.75rem 0.25rem rgb(10 10 141);
+}
+
+.skills__box ul{
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.skills__img{
+    height: 2.25rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.skills__img img{
+    height: 100%;
+}
