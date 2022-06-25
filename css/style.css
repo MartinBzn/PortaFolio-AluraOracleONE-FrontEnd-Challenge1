@@ -7,10 +7,11 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --color-de-fondo: #F5F5F5;
-   --color-de-fondo-alternativo: #f0f0f0;
-   --color-de-link: #000;
+   --color-de-fondo: #0477fb;
+   --color-de-fondo-alternativo: #013d83;
+   --color-de-link: rgb(255 231 77);
    --color-lineas: silver;
+   --color-de-texto:whitesmoke;
 
    --tamanio-icono:2.25rem;
 }
@@ -22,6 +23,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
+    color: var(--color-de-texto);
 }
 ol, ul,li {
     list-style: none;

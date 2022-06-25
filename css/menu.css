@@ -8,6 +8,41 @@
     height: 5.5rem;
 }
 
+.menu__titulo{
+    position: relative;
+    float: center;
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin: .7rem;
+}
+
+.menu__titulo span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 1.55rem;
+    background: var(--color-de-fondo);
+    animation: tipeo 3s steps(22), titilar .5s 3s infinite;
+}
+
+@keyframes tipeo {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+@keyframes titilar {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .menu__list{
     margin: 0;
     padding: 0;
@@ -22,7 +57,8 @@
     width: 100%;
     max-width: 15rem;
     background: var(--color-de-fondo-alternativo);
-    font-variant: small-caps;
+    /* font-variant: small-caps; */
+    color: var(--color-de-texto);
 }
 
 .menu__nav{
@@ -33,11 +69,11 @@
     display: block;
 }
 
-.menu__titulo{
+/* .menu__titulo{
     margin-top: 1rem;
     margin-bottom: .5rem;
-    font-size: 1.2rem;
-}
+    font-size: 1.5rem;
+} */
 
 .menu__opciones{
     display: flex;
@@ -49,7 +85,7 @@
 }
 
 .menu__list__item__contacto__ancla{
-    font-size: .75rem;
+    font-size: .9rem;
 }
 
 .menu_responsivo{

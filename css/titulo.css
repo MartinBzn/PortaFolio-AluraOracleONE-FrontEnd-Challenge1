@@ -24,12 +24,18 @@
     margin: auto;
 }
 
+.titulo__bio{
+    text-align: center;
+}
+
 .titulo__subsection{
     font-size: 1rem;
     font-weight: normal;
+    text-align: justify;
 }
 
 .titulo__network{
     display: flex;
     justify-content: space-around;
+    padding: 0;
 }
