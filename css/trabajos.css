@@ -1,0 +1,55 @@
+.experience__img{
+    width: calc(100vw - 2rem);
+    border-radius: 2rem;
+    overflow: hidden;
+    border: 2px solid rgb(12, 12, 32);
+    box-shadow: 0px 0px 0.75rem 0.1rem rgb(146, 146, 151);
+}
+
+.experiencie__box{
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid silver;
+}
+
+.experience__description{
+    display: flex;
+    justify-content: space-around;
+}
+
+.experience__btn {
+    min-width: 8rem;
+    height: 2.5rem;
+    color: #fff;
+    padding: .25rem .75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: .5rem;
+    z-index: 0;
+    background: rgb(12, 12, 32);
+    overflow: hidden;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+.experience__btn:hover {
+    color: #fff;
+}
+.experience__btn:hover:after {
+    width: 100%;
+}
+.experience__btn:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0;
+    background: #308dea;
+}
