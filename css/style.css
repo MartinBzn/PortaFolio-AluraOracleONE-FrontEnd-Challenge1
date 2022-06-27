@@ -1,19 +1,14 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
-
 :root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --color-de-fondo: rgb(58, 58, 58);
    --color-de-fondo-alternativo: #010c19;
    --color-de-link: rgb(246, 246, 246);
    --color-lineas: silver;
    --color-de-texto:whitesmoke;
-
    --tamanio-icono:2.25rem;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -27,6 +22,10 @@ body {
     color: var(--color-de-texto);
 }
 
+.cuerpo{
+    width: 100%;
+}
+
 .fondo-semi-transparente{
     background-color: rgba(0,0,0,.1);
     border-radius: 1rem;
@@ -36,6 +35,7 @@ body {
 ol, ul,li {
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color: var(--color-de-link);
@@ -47,6 +47,18 @@ a{
     margin-top: 1rem;
 }
 
+.aparecer{
+    position: relative;
+    transform: translateY(5rem);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.aparecer.activo{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .texto-centrado{
     text-align: center;
 }
@@ -55,45 +67,20 @@ a{
     text-align: justify;
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
-
-.cuerpo{
-    width: 100%;
+.btn_home_boton{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    transition: 1s all;
+    z-index: 99;
+    border-radius: 100%;
+    border: none;
+    background-color: whitesmoke;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    cursor: pointer;
 }
-
-
-/* experiencia*/
-
-section.experience{
-
-}
-
-/*Contacto*/
-
-section.formcontato{
-
-}
-
-/*footeer*/
-
-section.footer{
-   
-}
-
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
-
-
 /*Tablet*/
 @media (min-width: 768px) {
 

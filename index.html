@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/hobbies.css">
     <link rel="stylesheet" href="css/formacion.css">
     <link rel="stylesheet" href="css/trabajos.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,24 +24,27 @@
 <body>
     <div class="cuerpo">
          <!-- Sección del Menú  -->
-        <section class="menu">
+        <section class="menu" id="menu">
             <header class="menu__header">
-                <h3 class="menu__titulo">Martín Alejandro Bazán<span>_</span></h3>
-            </header>
-            <section class="menu__opciones">
+                <div class="menu__titulo__container">
+                    <h1 class="menu__titulo">Martín Alejandro Bazán<span>_</span></h1>
+                </div>
                 <li class="menu__list__item__contacto"><a href="#contacto" class="menu__list__item__contacto__ancla">martin.alejandro.bzn@gmail.com</a></li>
+            </header>
+            <section class="menu__opciones fondo-semi-transparente contenedores">
                 <div class="menu_responsivo">
                     <input type="checkbox" class="menu__check">
                     <img class="menu__icono menu__icono__barras" src="./assets/hamburger-menu-icon-png-white-10.png"></img>
                     <img class="menu__icono menu__icono__cruz" src="./assets/cross_menu.png"></img>
                     <nav class="menu__nav">
                         <ul class="menu__list">
-                            <li class="menu__list__item menu__list__item__ancla">Menú</li>
+                            <li class="menu__list__item menu__list__item__titulo">Menú</li>
                             <li class="menu__list__item"><a href="#sobre-mi" class="menu__list__item__ancla">Sobre mi</a></li>
                             <li class="menu__list__item"><a href="#skills" class="menu__list__item__ancla">Skills</a></li>
                             <li class="menu__list__item"><a href="#hobbies" class="menu__list__item__ancla">Hobbies</a></li>
                             <li class="menu__list__item"><a href="#formacion" class="menu__list__item__ancla">Formación</a></li>
                             <li class="menu__list__item"><a href="#xp" class="menu__list__item__ancla">Proyectos</a></li>
+                            <li class="menu__list__item"><a href="#xplab" class="menu__list__item__ancla">Trabajos</a></li>
                             <li class="menu__list__item"><a href="#contacto" class="menu__list__item__ancla">Contacto</a></li>
                         </ul>
                     
@@ -51,14 +56,14 @@
         <!-- Sección del Header/Title/Hero -->
         <section class="titulo fondo-semi-transparente contenedores">
             <div class="titulo__div">
-                <div class="titulo__div__imagen" data-aos="fade-up">
+                <div class="titulo__div__imagen" >
                     <img class="titulo__profile" src="assets\profile.png">
                 </div>
                 
                 <div class="titulo__container">
-                    <h2 class="titulo__bio texto-centrado" data-aos="fade-up">¡Bienvenido a mi Portfolio! </h2>
-                    <h3 class="titulo__subsection texto-justificado" data-aos="fade-up">Actualmente estoy participando del proyecto Oracle ONE en Alura Latam. Participe tambien del programa Codo a Codo, de la Agencia de Aprendizaje a lo largo de la vida. En esta Web podras conocer acerca de mis estudios, logros y un poco sobre mi.</h3>
-                    <ul class="titulo__network" data-aos="fade-up">
+                    <h2 class="titulo__bio texto-centrado" >¡Bienvenido a mi Portfolio! </h2>
+                    <h3 class="titulo__subsection texto-justificado" >Actualmente estoy participando del proyecto Oracle ONE en Alura Latam. Participe tambien del programa Codo a Codo, de la Agencia de Aprendizaje a lo largo de la vida. En esta Web podras conocer acerca de mis estudios, logros y un poco sobre mi.</h3>
+                    <ul class="titulo__network" >
                         <!-- Pon los enlaces de tus redes sociales favoritas -->
                         <li class="titulo__network__item"><a href="https://github.com/MartinBzn">Github</a></li>
                         <li class="titulo__network__item"><a href="https://www.linkedin.com/in/mart%C3%ADn-alejandro-baz%C3%A1n-23711257/">Linkedin</a></li>
@@ -69,66 +74,66 @@
         </section>
         
         <!-- Sección sobre mi -->
-        <section class="about fondo-semi-transparente contenedores" id="sobre-mi">
-            <h3 class="about__titulo texto-centrado" data-aos="fade-up">Sobre mi</h3>
-            <p class="about__parrafo texto-justificado" data-aos="fade-up">¡Hola! Soy de Buenos Aires, Argentina, ciudad donde vivo actualmente. Durante la secundaria estudie y me recibí de Técnico en Computación, aprendiendo lenguajes de programación como Pascal, C++, Clipper y Visual Basic, como así también realizar consultas con SQL. Trabajé siempre en el sector de logística, y en estos momentos estoy en el área de Auditoria como analista de Control Operativo. Este último me llevo a manejar grandes volúmenes de información, por lo que he aplicado mis conocimientos en programación para obtener resultados inmediatos y de gran fiabilidad.</p>
-            <p class="about__parrafo texto-justificado" data-aos="fade-up">Actualmente, me encuentro ampliando mis conocimientos con las nuevas tecnologías, aprendiendo diferentes lenguajes y desarrollando más lo que tanto me gusta, que es la programación. He estudiado HTML, CSS, JavaScript, Python, Django y Node.js También, estoy comenzando la carrera de Licenciado en Ciencia de Datos, ya que hoy en día manejar un gran volumen de información es una importante herramienta para el crecimiento de una empresa.</p>
-            <p class="about__parrafo texto-justificado" data-aos="fade-up">Soy responsable, aplicado, con una gran iniciativa y capacidad resolutiva. Trabajo bien en equipo, aportando siempre mi experiencia y conocimientos. También tengo gran capacidad de aprendizaje y siempre busco superarme. Me gustaria poder ingresar en empresas o áreas de desarrollo IT, para poder de esta manera dedicarme a lo que tanto me gusta. </p>
+        <section class="about fondo-semi-transparente contenedores aparecer" id="sobre-mi">
+            <h3 class="about__titulo texto-centrado" >Sobre mi</h3>
+            <p class="about__parrafo texto-justificado" >¡Hola! Soy de Buenos Aires, Argentina, ciudad donde vivo actualmente. Durante la secundaria estudie y me recibí de Técnico en Computación, aprendiendo lenguajes de programación como Pascal, C++, Clipper y Visual Basic, como así también realizar consultas con SQL. Trabajé siempre en el sector de logística, y en estos momentos estoy en el área de Auditoria como analista de Control Operativo. Este último me llevo a manejar grandes volúmenes de información, por lo que he aplicado mis conocimientos en programación para obtener resultados inmediatos y de gran fiabilidad.</p>
+            <p class="about__parrafo texto-justificado" >Actualmente, me encuentro ampliando mis conocimientos con las nuevas tecnologías, aprendiendo diferentes lenguajes y desarrollando más lo que tanto me gusta, que es la programación. He estudiado HTML, CSS, JavaScript, Python, Django y Node.js También, estoy comenzando la carrera de Licenciado en Ciencia de Datos, ya que hoy en día manejar un gran volumen de información es una importante herramienta para el crecimiento de una empresa.</p>
+            <p class="about__parrafo texto-justificado" >Soy responsable, aplicado, con una gran iniciativa y capacidad resolutiva. Trabajo bien en equipo, aportando siempre mi experiencia y conocimientos. También tengo gran capacidad de aprendizaje y siempre busco superarme. Me gustaria poder ingresar en empresas o áreas de desarrollo IT, para poder de esta manera dedicarme a lo que tanto me gusta. </p>
         </section>
 
         <!-- Sección de Skills -->
-        <section class="skills fondo-semi-transparente contenedores" data-aos="fade-up" id="skills">
+        <section class="skills fondo-semi-transparente contenedores aparecer"  id="skills">
             <h3 class="skills__titulo texto-centrado">Skills</h3>
                 <div class="skills__linea">
-                    <div class="skills__box" data-aos="fade-up">
+                    <div class="skills__box aparecer" >
                         <ul>
                             <li class="skills__img"><img src="assets\html5-brands.svg"></li>
                             <li class="skills__nombre"> HTML 5</li>
                         </ul>
                     </div>
 
-                    <div class="skills__box" data-aos="fade-up">
+                    <div class="skills__box aparecer" >
                         <ul>
                             <li class="skills__img"> <img src="assets\css3-alt-brands.svg" alt=""> </li>
                             <li class="skills__nombre">CSS 3</li>
                         </ul>
                     </div>
 
-                    <div class="skills__box" data-aos="fade-up">
+                    <div class="skills__box aparecer" >
                         <ul>
                             <li class="skills__img"> <img src="assets\js-square-brands.svg" alt=""></li>
                             <li class="skills__nombre">Javascript</li>
                         </ul>
                     </div>
 
-                    <div class="skills__box" data-aos="fade-up">
+                    <div class="skills__box aparecer" >
                         <ul>
                             <li class="skills__img"> <img src="assets\vuejs-brands.svg" alt=""></li>
                             <li class="skills__nombre">Vue.js</li>
                         </ul>
                     </div>
 
-                    <div class="skills__box" data-aos="fade-up">
+                    <div class="skills__box aparecer" >
                         <ul>
                             <li class="skills__img"><img src="assets\node-brands.svg" alt=""></li>
                             <li class="skills__nombre">Node JS</li>
                         </ul>
                     </div>
 
-                    <div class="skills__box" data-aos="fade-up">
+                    <div class="skills__box aparecer" >
                         <ul>
                             <li class="skills__img"> <img src="assets\mysql.svg" alt=""> </li>
                             <li class="skills__nombre">SQL</li>
                         </ul>
                     </div>
 
-                    <div class="skills__box" data-aos="fade-up">
+                    <div class="skills__box aparecer" >
                         <ul>
                             <li class="skills__img"> <img src="assets\python.svg" alt=""> </li>
                             <li class="skills__nombre">Python</li>
                         </ul>
                     </div>
-                    <div class="skills__box" data-aos="fade-up">
+                    <div class="skills__box aparecer" >
                         <ul>
                             <li class="skills__img"> <img src="assets\cib-django.svg" alt=""> </li>
                             <li class="skills__nombre">Django</li>
@@ -139,32 +144,32 @@
         </section>
 
         <!-- Sección de Hobbies -->
-        <section class="hobbies fondo-semi-transparente contenedores" id="hobbies">
-            <h3 class="hobbies__titulo texto-centrado" data-aos="fade-up">Hobbies</h3>
+        <section class="hobbies fondo-semi-transparente contenedores aparecer" id="hobbies">
+            <h3 class="hobbies__titulo texto-centrado" >Hobbies</h3>
                 <div class="hobbies__linea">
                     
-                    <div class="hobbies__box" data-aos="fade-up">
+                    <div class="hobbies__box aparecer" >
                         <ul>
                             <li class="hobbies__img"> <img src="assets\headphones-solid.svg" alt=""></li>
                             <li class="hobbies__nombre">Oir música</li>
                         </ul>
                     </div>
 
-                    <div class="hobbies__box" data-aos="fade-up">
+                    <div class="hobbies__box aparecer" >
                         <ul>
                             <li class="hobbies__img"><img src="assets\tv-solid.svg" alt=""></li>
                             <li class="hobbies__nombre">Ver séries</li>
                         </ul>
                     </div>
 
-                    <div class="hobbies__box" data-aos="fade-up">
+                    <div class="hobbies__box aparecer" >
                         <ul>
                             <li class="hobbies__img"> <img src="assets\fire-burner-solid.svg" alt=""> </li>
                             <li class="hobbies__nombre">Cocinar</li>
                         </ul>
                     </div>
 
-                    <div class="hobbies__box" data-aos="fade-up">
+                    <div class="hobbies__box aparecer" >
                         <ul>
                             <li class="hobbies__img"> <img src="assets\book-open-reader-solid.svg" alt=""> </li>
                             <li class="hobbies__nombre">Leer</li>
@@ -175,10 +180,10 @@
         </section>
 
             <!-- Sección de Formación académica -->
-        <section class="academic fondo-semi-transparente contenedores" id="formacion">
+        <section class="academic fondo-semi-transparente contenedores aparecer" id="formacion">
             <h2 class="academic__titulo texto-centrado" >Formación académica</h2>
             <div class="academic__cursos">
-                <div class="academic__cursos__box" data-aos="fade-up">
+                <div class="academic__cursos__box aparecer" >
                     <ul class="academic__cursos__list">
                         <!--Pon el logotipo de la institución de formación -->
                         <li class="academic__cursos__item__img"><img src="assets\alura-logo.svg"></li>
@@ -187,7 +192,7 @@
                         <li class="academic__cursos__item__subtitulo"><p>2022 - En curso</p></li>
                     </ul>
                 </div>
-                <div class="academic__cursos__box" data-aos="fade-up">
+                <div class="academic__cursos__box aparecer" >
                     <ul class="academic__cursos__list">
                         <!-- Pon el logotipo de la institución de formación -->
                         <li class="academic__cursos__item__img"><img src="assets\AgenciaDeAprendizajeALoLargoDeLaVida.png"></li>
@@ -197,7 +202,7 @@
                     </ul>
                 </div>
 
-                <div class="academic__cursos__box" data-aos="fade-up">
+                <div class="academic__cursos__box aparecer" >
                     <ul class="academic__cursos__list">
                         <!-- Pon el logotipo de la institución de formación -->
                         <li class="academic__cursos__item__img"><img src="assets\AgenciaDeAprendizajeALoLargoDeLaVida.png"></li>
@@ -207,7 +212,7 @@
                     </ul>
                 </div>
 
-                <div class="academic__cursos__box" data-aos="fade-up">
+                <div class="academic__cursos__box aparecer" >
                     <ul class="academic__cursos__list">
                         <!-- Pon el logotipo de la institución de formación -->
                         <li class="academic__cursos__item__img"><img src="assets\AgenciaDeAprendizajeALoLargoDeLaVida.png"></li>
@@ -217,7 +222,7 @@
                     </ul>
                 </div>
 
-                <div class="academic__cursos__box" data-aos="fade-up">
+                <div class="academic__cursos__box aparecer" >
                     <ul class="academic__cursos__list">
                         <!-- Pon el logotipo de la institución de formación -->
                         <li class="academic__cursos__item__img"><img src="assets\logo-accenture.jpg"></li>
@@ -227,7 +232,7 @@
                     </ul>
                 </div>
 
-                <div class="academic__cursos__box" data-aos="fade-up">
+                <div class="academic__cursos__box aparecer" >
                     <ul class="academic__cursos__list">
                         <!-- Pon el logotipo de la institución de formación -->
                         <li class="academic__cursos__item__img"><img src="assets\logo-udemy.svg"></li>
@@ -243,10 +248,10 @@
         </section>
 
         <!-- Sección de Experiencia Profesional/Proyectos-->
-        <section class="experience fondo-semi-transparente contenedores" id="xp">
-            <h2 class="experience__section__titulo texto-centrado" >Trabajos realizados</h2>
+        <section class="experience fondo-semi-transparente contenedores aparecer" id="xp">
+            <h2 class="experience__section__titulo texto-centrado" >Proyectos realizados</h2>
 
-            <div class="experiencie__box" data-aos="fade-up">
+            <div class="experiencie__box aparecer" >
                 <h3 class="experience__titulo">Sitio Web para Inmobiliaria</h3>
                 <img class="experience__img" src="assets\HaydeePartamentos.PNG">
                 <div class="experience__info">
@@ -260,7 +265,7 @@
                 </div>
             </div>  
 
-            <div class="experiencie__box" data-aos="fade-up">
+            <div class="experiencie__box aparecer" >
                 <h2 class="experience__titulo">Encriptador de Texto</h2>
                 <img class="experience__img" src="assets\Encriptador.png">
                 <div class="experience__info">                    
@@ -274,68 +279,79 @@
                 </div>
             </div>  
 
-            <div class="experience__box" data-aos="fade-up">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets\secretcode_print.png">
+            <div class="experiencie__box aparecer" >
+                <h2 class="experience__titulo">Juego del Ahorcado</h2>
+                <img class="experience__img" src="assets\Ahorcado.png">
                 <div class="experience__info-container">
-                    <h2 class="experience__titulo">Encriptador de texto</h2>
-                    <h3 class="experience__text">Challenge Oracle </h3>
+                    <p class="experience__text">Challenge N°2 - Alura Oracle Next Education</p>
+                    <p class="experience__text">Juego del Ahorcado. Hecho con HTML, CSS y JavaScript. Diseño Responsive</p>
                         <div class="experience__description">
                                 <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/MartinBzn/Ahorcado-AluraOracleONE-Challenge2"><button class="experiencia__botao--repo experience__btn">Repositório</button></a></span>
+                                <span class="experience__demo"><a href=" https://martinbzn.github.io/Ahorcado-AluraOracleONE-Challenge2/"><button class="experience__botao--demo experience__btn">Ver demo</button></a></span>
                         </div>
                 </div>
             </div>  
+        </section>
+        
+        <!-- Sección de Experiencia Laboral-->
+        <!-- <section class="explaboral fondo-semi-transparente contenedores aparecer" id="xplab">
+            <h2 class="explaboral__section__titulo texto-centrado" >Experiencia Laboral</h2>
 
-            <div class="experience__box" data-aos="fade-up">
-                <img class="experience__img" src="assets\forca2_print.png">
-                <div class="experience__info-container">
-                <h2 class="experience__titulo">Juego creado con HTML, CSS y JavaScript</h2>
-                    <h3 class="experience__text">Challenge Oracle </h3>
-                        <div class="experience__description">
-                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                        </div>
+            <div class="explaboral__box aparecer" >
+                <h3 class="explaboral__titulo">Sitio Web para Inmobiliaria</h3>
+                <div class="explaboral__info">
+                    <p class="explaboral__text">Trabajo Pratico FrontEnd Programa Codo a Codo </p>
+                    <p class="explaboral__text">Es una web para una inmobiliria ficticia. Hecha con HTML, CSS y Javascript. Diseño Responsive</p>
                 </div>
-            </div>
-        </section>  
+            </div>  
+
+        </section> -->
 
         <!-- Sección de Contacto -->
-        <section class="formcontato fondo-semi-transparente contenedores" id="contacto">
-            <div  class="formcontato__contacto">
-                <div class="formcontato--esquerda">
+        <section class="formcontacto fondo-semi-transparente contenedores aparecer" id="contacto" >
+            <div  class="formcontacto__contacto">
+                <!-- <div class="formcontato--esquerda">
                     <img class="formcontato__img" src="assets\contact_image.png">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__titulo">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                </div> -->
+                <div class="formcontacto__text">
+                    <h2 class="formcontacto__titulo texto-centrado">Contacto</h2>
+                    <p class="formcontacto__subtext">¿Quieres contactarme?</p>
+                    <p class="formcontacto__subtext texto-justificado">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </p>
+                    <form class="formconctato__form" name="form" id="form">
+                        <input class="formcontacto__input formconctato__elemento" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <input class="formcontacto__input formconctato__elemento" type="email" name="email" id="email" placeholder="E-mail">
+                        <input class="formcontacto__input formconctato__elemento" type="text" name="asunto" id="asunto" placeholder="Asunto">
+                        <textarea class="formcontacto__textarea formconctato__elemento" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        <span class="formcontacto__obligatorio">Todos los datos son obligatorios.</span>
+                        <button type="submit" class="formcontacto__boton" id="botonEnviar">Enviar mensaje</button>
                     </form>
                 </div>
             </div>
         </section>
 
+        <div class="btn__home">
+            <span class="btn__home__span"><a href="#menu"><button class="btn_home_boton"><img src="assets\flecha_arriba.svg" alt=""></button></a></span>
+        </div>
+
+        <dialog class="ventana" id="ventana-emergente">
+            <p class="ventana__mensaje" id="ventana__mensaje__id"></p>
+            <button id="ventana-emergente__boton" class="formcontacto__boton">Aceptar</button>
+        </dialog>
+    
         <!-- Sección de Footer -->
         <section class="footer">
-            <div class="footer__rodapie">
-                <p>Desarrollado por Martin Bazan</p>
-                <p>2022</p>
+            <div class="footer__contenedor">
+                <a href="https://www.linkedin.com/in/mart%C3%ADn-alejandro-baz%C3%A1n-23711257" class="iconos"><img src="assets/linkedin-in-brands.svg" alt="" ></a>
+                <a href="https://github.com/MartinBzn/Encriptador-AluraOracleONE-Challenge1.git" class="iconos"><img src="assets/github-brands.svg" alt="" ></a>
+                <a href="mailto:martin.alejandro.bzn@gmail.com" class="iconos"><img src="assets/envelope-solid.svg" alt="" ></a>
             </div>
+
+            <p class="footer__pie">&copy; 2022 - Martín Alejandro Bazán</p>
         </section>
     </div>
- <!-- Script del documento JavaScript -->
-<script src="js/validacion.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+    <!-- Script del documento JavaScript -->
+    <script src="js/validacion.js"></script>
+    <script src="js/aparecer.js"></script>
 </body>
 </html>

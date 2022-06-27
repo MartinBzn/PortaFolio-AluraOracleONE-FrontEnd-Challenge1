@@ -34,3 +34,33 @@
 .hobbies__img img{
     height: 100%;
 }
+
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+
+    .hobbies__titulo{
+        font-size: 2rem;
+    }
+    .hobbies__box{
+        width: calc((100vw / 4) - 2rem);
+        height: calc((100vw / 4) - 2rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+    .hobbies__img{
+        height: 5rem;
+    }
+
+    .hobbies__linea{
+        align-items: center;
+    }
+    
+    .hobbies__nombre{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+}

@@ -4,16 +4,19 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* border-bottom: 1px solid var(--color-lineas); */
-    height: 5.5rem;
+}
+
+.menu__titulo__container{
+    width: 100%;
+    margin: auto;
 }
 
 .menu__titulo{
     position: relative;
-    float: center;
     font-family: monospace;
     font-size: 1.5rem;
-    margin: .7rem;
+    margin: .7rem auto;
+    text-align: left;
 }
 
 .menu__titulo span{
@@ -43,21 +46,36 @@
     }
 }
 
+.menu__list__item__contacto{
+    text-align: center;
+    font-weight: bold;
+}
+
 .menu__list{
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 60%;
+    max-width: 20rem;
+}
+
+.menu__list__item__titulo{
+    padding: 0.625rem;
+    margin: auto;
+    border-bottom: 2px solid var(--color-lineas);
+    background: var(--color-de-fondo-alternativo);
+    color: gold;
+    text-align: end;
+    font-weight: bold;
+    font-style: italic;
+    font-size: calc(var(--tamanio-icono) - 1rem);
 }
 
 .menu__list__item__ancla{
     text-decoration: none;
     display: block;
-    padding: .625rem 1.25rem;
+    padding: .625rem 1rem;
     border-bottom: 2px solid var(--color-lineas);
-    width: 100%;
-    max-width: 15rem;
     background: var(--color-de-fondo-alternativo);
-    /* font-variant: small-caps; */
     color: var(--color-de-texto);
 }
 
@@ -69,19 +87,11 @@
     display: block;
 }
 
-/* .menu__titulo{
-    margin-top: 1rem;
-    margin-bottom: .5rem;
-    font-size: 1.5rem;
-} */
-
 .menu__opciones{
-    display: flex;
     width: calc(100% - 0.75rem);
     align-items: center;
     justify-content: space-between;
     height: var(--tamanio-icono);
-
 }
 
 .menu__list__item__contacto__ancla{
@@ -92,7 +102,7 @@
     position: relative;
     min-height: var(--tamanio-icono);
     align-self: flex-start;
-    width: 50%;
+    /* width: 75%; */
     opacity: .75;
     z-index: 2;
 }
@@ -104,8 +114,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    right: 0;
-    top:-var(--tamanio-icono);
+    left: 0;
 }
 
 .menu__icono{

@@ -1,0 +1,27 @@
+.footer{
+    background-color: rgba(0,212,255,1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:1rem;
+}
+
+.iconos{
+    margin: .5rem;
+}
+
+.iconos img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.footer__contenedor{
+    position: relative;
+    display: inline;
+    margin: 0.5rem auto;
+}
+
+.footer__pie{
+    margin: 0 auto 1rem auto;
+    color: black;
+}
