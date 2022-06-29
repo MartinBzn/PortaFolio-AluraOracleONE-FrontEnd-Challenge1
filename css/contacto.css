@@ -76,15 +76,24 @@
 
 .ventana {
     flex-direction: column;
-    border: 7px double goldenrod;
+    border: 7px double darkblue;
     border-radius: 10px;
     text-align: center;
     box-shadow: 10px 10px 10px -1px black;
-    background-color: rgb(114, 49, 2);
+    background-color: antiquewhite;
     justify-content: center;
+    animation: abrirVentana 1s;
+}
+
+@keyframes abrirVentana{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
 }
 
 .ventana p, .ventana strong{
-    color: goldenrod;
+    color: black;
     text-shadow: none;
 }

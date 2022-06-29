@@ -31,7 +31,30 @@
     margin-bottom: .5rem;
 }
 
-.academic__cursos__item__subtitulo{
+.academic__cursos__item__subtitulo p{
+    margin: .5rem auto;
     height: 1rem;
     font-size: .85rem;
+}
+
+@media screen and (min-width:768px){
+    
+    .academic__cursos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .academic__cursos__box{
+        width: calc((100% / 2) - 1rem);
+        text-align: center;
+    }
+
+    .academic__cursos__item__titulo{
+        height: 3.5rem;
+    }
+
+}@media screen and (min-width: 1024px){
+    .academic__cursos__box {
+        width: calc((100% / 3) - 1rem);
+    }
 }

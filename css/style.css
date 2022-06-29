@@ -82,41 +82,21 @@ a{
     cursor: pointer;
 }
 /*Tablet*/
-@media (min-width: 768px) {
-
-/* Menú */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 20px;
+    }
+    .cuerpo{
+        width: 95%;
+        margin: auto;
+    }
 
 }
 
-/*Mobile*/
-@media (min-width: 425px) {
-
-/*Menu*/
-
-/*Titulo*/
-
-/*Sección sobre mi*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
- /*Contacto*/
-
-/*Footer*/
-
+@media screen and (min-width: 1024px) {
+    .cuerpo{
+        width: 95%;
+        margin: auto;
+        max-width: 1200px;
+    }
 }

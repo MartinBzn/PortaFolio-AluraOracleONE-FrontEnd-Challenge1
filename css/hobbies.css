@@ -3,6 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 1.17rem;
 }
 
 .hobbies__box{
@@ -62,5 +63,25 @@
     .hobbies__nombre{
         font-size: 1.5rem;
         margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .hobbies__box {
+        width: calc((100vw / 10) - 2rem);
+        height: calc((100vw / 10) - 2rem);
+        margin: auto 2rem;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .hobbies__linea {
+        justify-content:center;
+        margin-bottom: 2rem;
+    }
+
+    .hobbies__img {
+        height: 2.25rem;
     }
 }
