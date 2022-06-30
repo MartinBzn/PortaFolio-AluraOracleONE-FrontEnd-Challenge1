@@ -87,6 +87,7 @@
     .experience__titulo{
         grid-area: titulo;
         margin: 0.5rem;
+        margin-bottom: 2rem;
     }
 
     .experience__img {
@@ -102,6 +103,10 @@
         align-items: stretch;
         margin: 0 1rem;
         line-height: 1.6;
+    }
+
+    .experience__text{
+        margin-top: 0;
     }
 
    

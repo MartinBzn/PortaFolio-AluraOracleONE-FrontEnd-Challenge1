@@ -25,3 +25,9 @@
     margin: 0 auto 1rem auto;
     color: black;
 }
+
+@media screen and (min-width:1024px) {
+    .footer{
+        background: #0611e1;
+    }
+}

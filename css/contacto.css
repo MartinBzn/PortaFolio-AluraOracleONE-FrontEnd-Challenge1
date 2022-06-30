@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+.formcontacto--izquierda{
+    display: none;
+}
+
 .formconctato__elemento{
     margin: 0.5rem auto;
     box-sizing: border-box;
@@ -96,4 +100,33 @@
 .ventana p, .ventana strong{
     color: black;
     text-shadow: none;
+}
+
+@media screen and (min-width:1024px) {
+
+    .formcontacto__contacto{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .formcontacto--izquierda{
+        display: block;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+        overflow: hidden;
+        opacity: .75;
+    }
+
+    .formcontacto__img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .formcontacto__text{
+        padding-left:3rem;
+    }
+
+    .formcontacto__titulo{
+        margin-top: 0;
+    } 
 }

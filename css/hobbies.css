@@ -53,15 +53,14 @@
     }
 
     .hobbies__img{
-        height: 5rem;
+        height: 3rem;
     }
 
     .hobbies__linea{
         align-items: center;
     }
-    
-    .hobbies__nombre{
-        font-size: 1.5rem;
+     
+     .hobbies__nombre{
         margin-top: 1rem;
     }
 }
@@ -69,8 +68,10 @@
 @media screen and (min-width: 1024px) {
 
     .hobbies__box {
-        width: calc((100vw / 10) - 2rem);
-        height: calc((100vw / 10) - 2rem);
+        width: calc((100vw / 9) - 1rem);
+        height: calc((100vw / 9) - 1rem);
+        max-width: 7rem;
+        max-height: 7rem;
         margin: auto 2rem;
         flex-direction: row;
         justify-content: space-around;
@@ -83,5 +84,10 @@
 
     .hobbies__img {
         height: 2.25rem;
+    }
+
+    .hobbies__nombre{
+        font-size: 1rem;
+        margin-top: 1rem;
     }
 }

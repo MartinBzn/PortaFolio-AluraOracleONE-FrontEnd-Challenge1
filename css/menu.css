@@ -143,6 +143,10 @@
         display: inline;
     }
 
+    .menu__titulo span{
+        background: #0611e1;
+    }
+
     .menu__header{
         display: flex;
         justify-content: space-between;

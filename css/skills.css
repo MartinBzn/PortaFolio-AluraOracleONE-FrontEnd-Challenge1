@@ -67,9 +67,11 @@
 
 @media screen and (min-width: 1024px){
     .skills__box {
-        width: calc((100vw / 10) - 2rem);
-        height: calc((100vw / 10) - 2rem);
+        width: calc((100vw / 9) - 1rem);
+        height: calc((100vw / 9) - 1rem);
         flex-direction: row;
+        max-width: 7rem;
+        max-height: 7rem;
         justify-content: space-around;
     }
 
@@ -77,4 +79,10 @@
         justify-content: space-around;
         margin-bottom: 2rem;
     }
+
+    .skills__nombre{
+        margin-top: 1rem;
+    }
+
+    
 }
